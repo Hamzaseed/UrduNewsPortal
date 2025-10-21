@@ -1,0 +1,72 @@
+.social-buttons {
+  display: flex;
+  gap: 8px;
+  font-family: 'Noto Nastaliq Urdu', 'Segoe UI', sans-serif;
+}
+
+.social-buttons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social-buttons li {
+  display: inline-block;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 120px;
+}
+
+.btn span {
+  flex: 1;
+  text-align: center;
+}
+
+/* Colors */
+.btn.email { background: #b91c1c; }
+.btn.whatsapp { background: #22c55e; }
+.btn.twitter { background: #3b82f6; }
+.btn.facebook { background: #3b5998; }
+.btn.share { background: #fbbf24; color: #1f2937; }
+
+/* Hover */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* -------------------
+   RESPONSIVE STYLES
+------------------- */
+@media (max-width: 768px) {
+  .social-buttons {
+    flex-direction: column;         /* stack vertically */
+
+    gap: 12px;
+  }
+
+  .social-buttons ul {
+display: grid;
+grid-template-columns: 1fr 1fr;      /* make buttons vertical */
+    gap: 12px;
+    
+  }
+
+
+}

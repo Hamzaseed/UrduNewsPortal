@@ -1,0 +1,155 @@
+/* Footer Container */
+.footer-container {
+  background-color: black;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Footer Content - Centered Compact Grid */
+.footer-content {
+  display: grid;
+  padding: 10px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Footer Sections */
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin: 0 0 8px 0;
+  padding: 0 0 5px 0;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+
+/* Urdu Section */
+.urdu-section h3 {
+  font-family: 'Noto Nastaliq Urdu', 'Lateef', serif;
+  text-align: center;
+}
+
+/* Footer Links - Compact */
+.footer-links {
+  margin: 0;
+}
+
+.footer-links h4 {
+  font-size: 1rem;
+  margin: 0 0 5px 0;
+  color: #f4ac04;
+  border-left: 2px solid #f4ac04;
+  padding-left: 8px;
+  text-align: center;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 0;
+  padding: 4px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.footer-links li:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.urdu-section li {
+  font-family: 'Noto Nastaliq Urdu', 'Lateef', serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 500;
+  display: block;
+  transition: color 0.2s ease;
+  font-size: 0.9rem;
+  padding: 2px 0;
+}
+
+.footer-links a:hover {
+  color: #f4ac04;
+}
+
+/* Footer Bottom - Compact */
+.footer-bottom {
+  text-align: center;
+  padding: 5px 0;
+  margin: 15px 0 0 0;
+  grid-column: 1 / -1;
+
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin: 0;
+}
+
+/* Mobile Layout */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.1rem;
+    margin: 0 0 5px 0;
+  }
+  
+  .footer-links h4 {
+    font-size: 0.95rem;
+    margin: 0 0 3px 0;
+  }
+  
+  .footer-links li {
+    padding: 3px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    gap: 10px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1rem;
+    margin: 0 0 3px 0;
+  }
+  
+  .urdu-section li {
+    font-size: 0.9rem;
+  }
+  
+  .footer-links a {
+    font-size: 0.85rem;
+  }
+  
+  .footer-bottom {
+    margin: 10px 0 0 0;
+    padding: 3px 0;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.75rem;
+  }
+}

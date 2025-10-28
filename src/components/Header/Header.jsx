@@ -119,8 +119,8 @@ const Header = () => {
 
           </nav>
  {showAuth && (
-      <div className="modal-overlay">
-        <div className="modal-content">
+      <div className="auth-modal-overlay">
+        <div className="auth-modal-content">
           <button className="auth-close" onClick={handleClose}>
             ×
           </button>
